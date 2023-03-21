@@ -19,7 +19,7 @@ const Footer = (props: Props) => {
   return (
     <Wrapper>
       <div className="footerwrapper">
-        <div className="contacts">
+        <div className="contacts toOcult">
           <h3>Entre em Contato</h3>
           <p>
             <MapPin size={24} weight="fill" /> Rua Agrolândia, 325 Glória,

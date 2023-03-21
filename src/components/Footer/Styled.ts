@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 
 export const Wrapper = styled.footer`
   display: flex;
@@ -6,13 +7,7 @@ export const Wrapper = styled.footer`
   justify-content: flex-end;
   padding: 0 8%;
   height: 432px;
-  background-image: linear-gradient(
-    to bottom,
-    #24161911,
-    #24161955,
-    #24161955,
-    #ffc1eb55
-  );
+  background-image: linear-gradient(to bottom, #ff550000, ${theme.licorice});
 
   .footerwrapper {
     display: flex;
@@ -53,14 +48,14 @@ export const Wrapper = styled.footer`
         display: flex;
         flex-direction: row;
         justify-content: center;
-      }
-      div a {
-        margin: 0 0.5rem;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-      div a:hover {
-        color: #ffbb45;
+        a {
+          margin: 0 0.5rem;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            color: #ffbb45;
+          }
+        }
       }
     }
 
@@ -76,10 +71,10 @@ export const Wrapper = styled.footer`
       }
       p {
         margin-top: 0.7rem;
-      }
-      p span {
-        margin: 0 0.5rem;
-        color: #ffbb45;
+        span {
+          margin: 0 0.5rem;
+          color: #ffbb45;
+        }
       }
     }
   }
@@ -91,9 +86,9 @@ export const Wrapper = styled.footer`
     margin-top: 5rem;
     p {
       margin-bottom: 2rem;
-    }
-    p span {
-      color: #f00;
+      span {
+        color: #f00;
+      }
     }
     a {
       color: var(--cor-C);
