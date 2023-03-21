@@ -1,28 +1,56 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 24px;
+}
+
+:root {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
+  --cor-A: #1a2026;
+  --cor-B: #FFBB45;
+  --cor-C: #f2f7f2;
+  --cor-D: #6DC8C2;
+  --cor-E: #C7B8F8;
+  --cor-F: #FFC1EB;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  color: var(--cor-C);
+  background-color: var(--cor-A);
+}
+h1 {
+  font-family: "Dancing Script";
+  font-size: 3rem !important; 
+  line-height: 3.6rem !important;
+  font-weight: 700 !important;
+}
+h2 {
+  font-family: "Dancing Script";
+  font-size: 2rem !important;
+  line-height: 2.4rem !important;
+  font-weight: 700 !important;
+}
+h3 {
+  font-size: 28px;
+  font-family: "Dancing Script";
+  font-weight: 700 !important;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 1rem 0;
 }
 a {
-  font-weight: 500;
-  color: #646cff;
   text-decoration: none;
-}
-a:hover {
-  color: #535bf2;
+  font-weight: 500;
 }
