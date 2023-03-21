@@ -28,7 +28,7 @@ export const Container = styled.main`
   }
   .image-container {
     position: relative;
-    height: 500px;
+    height: 90vh;
     overflow: hidden;
   }
 
@@ -66,11 +66,11 @@ export const Container = styled.main`
   }
 
   button:first-child {
-    left: 0;
+    left: 1rem;
   }
 
   button:last-child {
-    right: 0;
+    right: 1rem;
   }
 `;
 

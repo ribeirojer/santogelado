@@ -50,6 +50,7 @@ ul {
   margin: 1rem 0;
 }
 a {
+  color: var(--alice-blue);
   text-decoration: none;
   font-weight: 500;
 }

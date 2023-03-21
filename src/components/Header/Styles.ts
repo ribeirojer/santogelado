@@ -1,11 +1,16 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 
-const colorClara = "#C7B8F8";
+const colorClara = theme.saffron;
 const colorBranca = "#fff";
-const colorEscura = "#2e1c20";
+const colorEscura = theme.licorice;
 
 export const Container = styled.header`
+  position: fixed;
   display: flex;
+  width: 100%;
+  z-index: 20;
+  background: linear-gradient(180deg, ${theme.licorice}, #ffffff00);
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -30,7 +35,7 @@ export const Container = styled.header`
     display: flex;
     justify-content: center;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 20;
     transition: 400ms ease-in-out 0s;
   }
   .checkbox .trace {
@@ -133,6 +138,7 @@ export const Container = styled.header`
     display: none;
     li a {
       padding: 0.3rem;
+      color: ${colorBranca};
       transition: 0.5s;
       font-weight: 700;
       &:hover {

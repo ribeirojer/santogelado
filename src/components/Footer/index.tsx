@@ -9,6 +9,7 @@ import {
   TwitterLogo,
 } from "phosphor-react";
 import { Link } from "react-router-dom";
+import Logo from "../Logo";
 //import logo from "../../assets/logo-removebg-preview.png";
 import { Wrapper } from "./Styled";
 
@@ -32,28 +33,14 @@ const Footer = (props: Props) => {
           </p>
         </div>
         <div className="company">
-          <Link to={"/"}>Santo Gelado
-            {
-              //<img src={logo} alt="logo" />
-            }
-          </Link>
-          <p>Diga "Oi!" para seu novo parceiro digital</p>
-          <p>levando sua presença digital para o próximo nível</p>
+          <Logo></Logo>
+          <p>Serviço de Bartender Profissional para Festas e Eventos</p>
           <div>
             <a href="https://www.facebook.com" target={"_blank"}>
               <FacebookLogo size={48} />
             </a>
-            <a href="https://www.twitter.com" target={"_blank"}>
-              <TwitterLogo size={48} />
-            </a>
-            <a href="https://www.linkedin.com" target={"_blank"}>
-              <LinkedinLogo size={48} />
-            </a>
             <a href="https://www.instagram.com" target={"_blank"}>
               <InstagramLogo size={48} />
-            </a>
-            <a href="https://www.pinterest.com" target={"_blank"}>
-              <PinterestLogo size={48} />
             </a>
           </div>
         </div>

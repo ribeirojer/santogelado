@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/logo.png";
 import { Container } from "./Styles";
+import Logo from "../Logo";
 
 type Props = {};
 
@@ -13,12 +13,10 @@ function Header() {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
+
   return (
     <Container>
-      <Link to={"/"}>
-        <img src={logo} alt="logo" />
-      </Link>
+      <Logo></Logo>
       <div className="checkbox-container">
         <div className="checkbox-wrapper">
           <input
