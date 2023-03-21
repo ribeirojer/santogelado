@@ -71,7 +71,7 @@ function Header() {
             <li>
               <Link
                 to={"/sobre-nos"}
-                className={location.pathname === "/agency" ? "active" : ""}
+                className={location.pathname === "/sobre-nos" ? "active" : ""}
               >
                 Sobre Nós
               </Link>
@@ -79,7 +79,7 @@ function Header() {
             <li>
               <Link
                 to={"/servicos"}
-                className={location.pathname === "/offers" ? "active" : ""}
+                className={location.pathname === "/servicos" ? "active" : ""}
               >
                 Serviços
               </Link>
@@ -87,7 +87,7 @@ function Header() {
             <li>
               <Link
                 to={"/contato"}
-                className={location.pathname === "/contact" ? "active" : ""}
+                className={location.pathname === "/contato" ? "active" : ""}
               >
                 Contato
               </Link>

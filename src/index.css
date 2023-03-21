@@ -17,20 +17,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --cor-A: #1a2026;
-  --cor-B: #FFBB45;
-  --cor-C: #f2f7f2;
-  --cor-D: #6DC8C2;
-  --cor-E: #C7B8F8;
-  --cor-F: #FFC1EB;
+  --saffron: #ebbe09ff;
+  --night: #080f0fff;
+  --alice-blue: #dcedffff;
+  --coyote: #705f3dff;
+  --licorice: #1e130fff;
 }
 body {
-  color: var(--cor-C);
-  background-color: var(--cor-A);
+  color: var(--alice-blue);
+  background-color: var(--licorice);
 }
 h1 {
   font-family: "Dancing Script";
-  font-size: 3rem !important; 
+  font-size: 3rem !important;
   line-height: 3.6rem !important;
   font-weight: 700 !important;
 }

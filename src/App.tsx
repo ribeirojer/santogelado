@@ -5,7 +5,13 @@ import Header from "./components/Header";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background: linear-gradient(-45deg, #050404, #2e1c20, #4a1942, #893168);
+  background: linear-gradient(
+    -45deg,
+    #080f0fff,
+    #1e130fff,
+    #705f3dff,
+    #ebbe09ff
+  );
   background-size: 400% 400%;
   animation: backgroundTransition 8s ease-in-out infinite;
 
@@ -60,7 +66,6 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-
   return (
     <Wrapper>
       <Header></Header>
