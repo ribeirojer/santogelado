@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import ImageCarousel from "../../components/ImageCarrousel";
 
-type Props = {}
+type Props = {};
 
 const Inicio = (props: Props) => {
+  const images = [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg",
+    "https://example.com/image3.jpg",
+  ];
+
   return (
-    <div>Inicio</div>
-  )
-}
+    <main>
+      <ImageCarousel images={images} />;
+    </main>
+  );
+};
 
 export default Inicio;

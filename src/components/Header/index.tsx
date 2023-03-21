@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-//import logo from "../../assets/logo-removebg-preview.png";
+import logo from "../../assets/logo.png";
 import { Container } from "./Styles";
 
 type Props = {};
@@ -13,13 +13,11 @@ function Header() {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
   return (
     <Container>
       <Link to={"/"}>
-        Santo gelado
-        {
-          //<img src={logo} alt="logo" />
-        }
+        <img src={logo} alt="logo" />
       </Link>
       <div className="checkbox-container">
         <div className="checkbox-wrapper">
@@ -43,17 +41,17 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to={"/agency"} onClick={handleMenuClick}>
-                  A Agência
+                <Link to={"/sobre-nos"} onClick={handleMenuClick}>
+                  Sobre Nós
                 </Link>
               </li>
               <li>
-                <Link to={"/offers"} onClick={handleMenuClick}>
+                <Link to={"/servicos"} onClick={handleMenuClick}>
                   Serviços
                 </Link>
               </li>
               <li>
-                <Link to={"/contact"} onClick={handleMenuClick}>
+                <Link to={"/contato"} onClick={handleMenuClick}>
                   Contato
                 </Link>
               </li>
@@ -72,15 +70,15 @@ function Header() {
             </li>
             <li>
               <Link
-                to={"/agency"}
+                to={"/sobre-nos"}
                 className={location.pathname === "/agency" ? "active" : ""}
               >
-                A Agência
+                Sobre Nós
               </Link>
             </li>
             <li>
               <Link
-                to={"/offers"}
+                to={"/servicos"}
                 className={location.pathname === "/offers" ? "active" : ""}
               >
                 Serviços
@@ -88,7 +86,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to={"/contact"}
+                to={"/contato"}
                 className={location.pathname === "/contact" ? "active" : ""}
               >
                 Contato
