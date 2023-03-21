@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import App from "./App";
 import "./index.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import App from "./App";
+import Home from "./pages/Inicio";
+import Sobre from "./pages/Sobre";
+import Contato from "./pages/Contato";
+import Servicos from "./pages/Servicos";
 import NotFound from "./pages/NotFound";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -14,8 +15,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<Home />} />
-          <Route path="/agency" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/sobre-nos" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/servicos" element={<Servicos />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

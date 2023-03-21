@@ -142,7 +142,7 @@ export const Container = styled.header`
   }
 
   .active {
-    border-bottom: 2px solid rgb(199, 184, 248);
+    border-bottom: 2px solid ${colorClara};
   }
 
   @media (min-width: 640px) {
