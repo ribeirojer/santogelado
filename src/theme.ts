@@ -1,4 +1,4 @@
-export const theme = {
+export default {
   saffron: "#ebbe09ff",
   night: "#080f0fff",
   aliceblue: "#dcedffff",

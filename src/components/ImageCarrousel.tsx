@@ -28,7 +28,7 @@ export const Container = styled.main`
   }
   .image-container {
     position: relative;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
   }
 
