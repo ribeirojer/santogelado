@@ -1,16 +1,15 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
+// import { theme } from "../../theme";
 
-const colorClara = theme.saffron;
+// const colorClara = theme.saffron;
 const colorBranca = "#fff";
-const colorEscura = theme.licorice;
+// const colorEscura = theme.licorice;
 
 export const Container = styled.header`
   position: fixed;
   display: flex;
   width: 100%;
   z-index: 20;
-  background: linear-gradient(180deg, ${theme.licorice}, #ffffff00);
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -97,7 +96,6 @@ export const Container = styled.header`
   }
   .menu-itens ul li a {
     margin: 1rem 0;
-    color: ${colorEscura};
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
@@ -108,7 +106,6 @@ export const Container = styled.header`
 
   #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
-    background-color: ${colorEscura};
     top: 47px;
   }
   #toggle:checked + .checkbox .trace:nth-child(2) {
@@ -119,14 +116,11 @@ export const Container = styled.header`
   }
   #toggle:checked + .checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
-    background-color: ${colorEscura};
     top: 48px;
   }
   #toggle:checked + .checkbox {
-    background-color: ${colorClara};
   }
   #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax ${colorClara};
     z-index: 1;
   }
   #toggle:checked ~ .menu-itens {
@@ -142,13 +136,11 @@ export const Container = styled.header`
       transition: 0.5s;
       font-weight: 700;
       &:hover {
-        color: ${colorClara};
       }
     }
   }
 
   .active {
-    border-bottom: 2px solid ${colorClara};
   }
 
   @media (min-width: 640px) {
