@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
+// import { theme } from "../../theme";
 
 export const Wrapper = styled.footer`
   display: flex;
@@ -7,7 +7,6 @@ export const Wrapper = styled.footer`
   justify-content: flex-end;
   padding: 0 8%;
   height: 432px;
-  background-image: linear-gradient(to bottom, #ff550000, ${theme.licorice});
 
   .footerwrapper {
     display: flex;
