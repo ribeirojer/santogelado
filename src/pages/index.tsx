@@ -20,13 +20,13 @@ export default function Home() {
                 <h2 className="mb-4">
                   Somos a <span>Santo Gelado</span> Drinks
                 </h2>
-                <p className="mb-6">
+                <p className="text-xl md:text-2l text-gray-700 leading-relaxed  mb-6">
                   uma empresa de bartenders profissionais que fornece serviços
                   de drinks personalizados e deliciosos para festas e eventos
                   especiais.
                 </p>
                 <a
-                  href="https://api.whatsapp.com/send?phone=554796059604&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
+                  href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
                   className="btn-get-started"
                 >
                   tenho interesse
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </section>
         <section id="gallery" className="gallery">
-          <div className="container mx-auto pb-16">
+          <div className="container mx-auto pb-16 px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {galleryItems.map((item) => (
                 <GalleryItem
@@ -54,8 +54,8 @@ export default function Home() {
         target="_blank"
         rel="external"
         className="whats"
-        href="https://api.whatsapp.com/send?phone=554796059604&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
-      >
+        href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
+        >
         <Image
           src={"/WhatsApp.png"}
           className="logo"

@@ -14,7 +14,7 @@ const Header = (props: Props) => {
   };
 
   return (
-    <header id="header" className="w-full fixed top-0">
+    <header id="header" className="backdrop-blur-xl bg-[#000000bb] text-white w-full fixed top-0">
       <div className="w-full flex items-center justify-between">
         <Link href="/">
           <Image src="/assets/logo.png" alt="logo" width={150} height={150} />

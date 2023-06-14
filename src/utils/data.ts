@@ -1,21 +1,21 @@
 export const galleryItems = [
   {
-    imageUrl: "/assets/img/gallery/gallery-1.jpg",
+    imageUrl: "/assets/fotos/327322113_1230978921154168_820812789073156308_n.jpg",
     imageAlt: "Gallery 1",
     galleryTitle: "Gallery-1",
   },
   {
-    imageUrl: "/assets/img/gallery/gallery-2.jpg",
+    imageUrl: "/assets/fotos/327777002_580710493516141_1892423836270613914_n.jpg",
     imageAlt: "Gallery 2",
     galleryTitle: "Gallery-2",
   },
   {
-    imageUrl: "/assets/img/gallery/gallery-3.jpg",
+    imageUrl: "/assets/fotos/332368153_932232857780027_1208422687201902281_n.jpg",
     imageAlt: "Gallery 3",
     galleryTitle: "Gallery-3",
   },
   {
-    imageUrl: "/assets/img/gallery/gallery-4.jpg",
+    imageUrl: "/assets/fotos/332890132_509947674645314_6834394603803236118_n.jpg",
     imageAlt: "Gallery 4",
     galleryTitle: "Gallery-4",
   },
