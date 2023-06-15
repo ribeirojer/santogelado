@@ -1,4 +1,7 @@
+import Card from "@/components/Card";
 import Header from "@/components/Header";
+import { cards } from "@/utils/data";
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -8,283 +11,58 @@ const Services = (props: Props) => {
     <>
       <Header></Header>
       <main id="main" data-aos="fade" data-aos-delay="1500">
-        <div className="page-header d-flex align-items-center">
-          <div className="container position-relative">
-            <div className="row d-flex justify-content-center">
-              <div className="col-lg-6 text-center">
-                <h2>Services</h2>
-                <p>
-                  Odio et unde deleniti. Deserunt numquam exercitationem.
-                  Officiis quo odio sint voluptas consequatur ut a odio
-                  voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
-                  ratione sint. Sit quaerat ipsum dolorem.
-                </p>
-
-                <a className="cta-btn" href="contact.html">
-                  Available for hire
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="container text-justify pt-28 mx-auto">
+          <h1 className="text-4xl font-bold mb-4 text-center">
+            Nossos Serviços
+          </h1>
+          <p className="italic py-3 mb-8 text-center">
+            Nossa equipe de bartenders experientes está pronta para fornecer
+            drinks deliciosos e personalizados para sua festa ou evento
+            especial.
+          </p>
         </div>
-        <section id="services" className="services">
-          <div className="container">
-            <div className="row gy-4">
-              <div className="col-xl-3 col-md-6 d-flex">
-                <div className="service-item position-relative">
-                  <i className="bi bi-activity"></i>
-                  <h4>
-                    <a href="" className="stretched-link">
-                      Lorem Ipsum
-                    </a>
-                  </h4>
-                  <p>
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-3 col-md-6 d-flex">
-                <div className="service-item position-relative">
-                  <i className="bi bi-bounding-box-circles"></i>
-                  <h4>
-                    <a href="" className="stretched-link">
-                      Sed ut perspici
-                    </a>
-                  </h4>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-3 col-md-6 d-flex">
-                <div className="service-item position-relative">
-                  <i className="bi bi-calendar4-week"></i>
-                  <h4>
-                    <a href="" className="stretched-link">
-                      Magni Dolores
-                    </a>
-                  </h4>
-                  <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-3 col-md-6 d-flex">
-                <div className="service-item position-relative">
-                  <i className="bi bi-broadcast"></i>
-                  <h4>
-                    <a href="" className="stretched-link">
-                      Nemo Enim
-                    </a>
-                  </h4>
-                  <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis
-                  </p>
-                </div>
-              </div>
+        <section className="p-8">
+          <div className="container mx-auto">
+            <div className="-mx-4 flex flex-wrap">
+              {cards.map((card, index) => (
+                <Card key={index} {...card} />
+              ))}
             </div>
           </div>
-        </section>
-
-        <section id="pricing" className="pricing">
-          <div className="container">
-            <div className="section-header">
-              <h2>Prices</h2>
-              <p>Check my adorable pricing</p>
-            </div>
-
-            <div className="row gy-4 gx-lg-5">
-              <div className="col-lg-6">
-                <div className="pricing-item d-flex justify-content-between">
-                  <h3>Portrait Photography</h3>
-                  <h4>$160.00</h4>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item d-flex justify-content-between">
-                  <h3>Fashion Photography</h3>
-                  <h4>$300.00</h4>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item d-flex justify-content-between">
-                  <h3>Sports Photography</h3>
-                  <h4>$200.00</h4>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item d-flex justify-content-between">
-                  <h3>Still Life Photography</h3>
-                  <h4>$120.00</h4>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item d-flex justify-content-between">
-                  <h3>Wedding Photography</h3>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item d-flex justify-content-between">
-                  <h3>Photojournalism</h3>
-                  <h4>$200.00</h4>
-                </div>
-              </div>
-            </div>
+          <div className="container mx-auto">
+            <h2 className="text-xl font-bold mb-4 text-justify ">
+              Estamos sempre prontos para atender às solicitações individuais,
+              recomendando drinks de acordo com as preferências de cada pessoa e
+              garantindo que todos se sintam bem acolhidos e satisfeitos durante
+              o evento.
+            </h2>
           </div>
         </section>
-
-        <section id="testimonials" className="testimonials">
-          <div className="container">
-            <div className="section-header">
-              <h2>Testimonials</h2>
-              <p>What they are saying</p>
-            </div>
-
-            <div className="slides-3 swiper">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="stars">
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Proin iaculis purus consequat sem cure digni ssim donec
-                      porttitora entum suscipit rhoncus. Accusantium quam,
-                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                      risus at semper.
-                    </p>
-                    <div className="profile mt-auto">
-                      <img
-                        src="assets/img/testimonials/testimonials-1.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="stars">
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Export tempor illum tamen malis malis eram quae irure esse
-                      labore quem cillum quid cillum eram malis quorum velit
-                      fore eram velit sunt aliqua noster fugiat irure amet legam
-                      anim culpa.
-                    </p>
-                    <div className="profile mt-auto">
-                      <img
-                        src="assets/img/testimonials/testimonials-2.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="stars">
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Enim nisi quem export duis labore cillum quae magna enim
-                      sint quorum nulla quem veniam duis minim tempor labore
-                      quem eram duis noster aute amet eram fore quis sint minim.
-                    </p>
-                    <div className="profile mt-auto">
-                      <img
-                        src="assets/img/testimonials/testimonials-3.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="stars">
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                      multos export minim fugiat minim velit minim dolor enim
-                      duis veniam ipsum anim magna sunt elit fore quem dolore
-                      labore illum veniam.
-                    </p>
-                    <div className="profile mt-auto">
-                      <img
-                        src="assets/img/testimonials/testimonials-4.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="stars">
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                      <i className="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Quis quorum aliqua sint quem legam fore sunt eram irure
-                      aliqua veniam tempor noster veniam enim culpa labore duis
-                      sunt culpa nulla illum cillum fugiat legam esse veniam
-                      culpa fore nisi cillum quid.
-                    </p>
-                    <div className="profile mt-auto">
-                      <img
-                        src="assets/img/testimonials/testimonials-5.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
+        <div className="flex flex-col gap-4  items-center justify-center  pb-24 container mx-auto">
+          <h2 className="text-3xl font-bold mb-4">Gostou?</h2>
+          <a
+            href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-4 px-8 rounded-md"
+          >
+            Entre em contato
+          </a>
+        </div>
+        <a
+          target="_blank"
+          rel="external"
+          className="whats"
+          href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
+        >
+          <Image
+            src={"/WhatsApp.png"}
+            className="logo"
+            alt="WhatsApp-logo"
+            width={50}
+            height={50}
+          />
+        </a>
       </main>
     </>
   );
