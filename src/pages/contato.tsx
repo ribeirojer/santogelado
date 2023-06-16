@@ -71,16 +71,14 @@ const contato = (props: Props) => {
   return (
     <>
       <Header></Header>
-      <main id="main" data-aos="fade" data-aos-delay="1500">
+      <main className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="container text-justify pt-28 mx-auto">
           <h1 className="text-4xl font-bold mb-4 text-center">Contato</h1>
           <p className="italic py-3 mb-8 text-center">
             Você está prestes a dar um passo importante para tornar o seu evento
-            verdadeiramente memorável. Nós, da Santo Gelado Drinks, estamos aqui
-            para ajudá-lo a transformar sua festa ou evento especial em uma
-            experiência única e inesquecível.
+            verdadeiramente memorável.
           </p>
-          <p>
+          <p className="text-center">
             Entre em contato através do formulário ou envie um e-mail ou ainda
             você pode entrar em contato através do nosso{" "}
             <a
@@ -95,7 +93,7 @@ const contato = (props: Props) => {
           </p>
         </div>
         <section className="container py-16 mx-auto flex flex-col items-center justify-between gap-8 md:flex-row pb-16">
-          <div>
+          <div className="flex flex-col items-start gap-4">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +106,9 @@ const contato = (props: Props) => {
               </svg>
               <div>
                 <h3 className="font-bold">Localização:</h3>
-                <span>Rua XV de Novembro, 2000, Joinville</span>
+                <a href="https://goo.gl/maps/Qn8Xz8VtQkxbh6t7A">
+                  Rua XV de Novembro, 2000, Joinville
+                </a>
               </div>
             </div>
             <div className="flex items-center">
@@ -123,7 +123,9 @@ const contato = (props: Props) => {
               </svg>
               <div>
                 <h3 className="font-bold">E-mail:</h3>
-                <span>contato@santogeladodrinks.com</span>
+                <a href="mailto:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+                  contato@santogeladodrinks.com
+                </a>
               </div>
             </div>
             <div className="flex items-center">
@@ -138,11 +140,19 @@ const contato = (props: Props) => {
               </svg>
               <div>
                 <h3 className="font-bold">Telefone:</h3>
-                <span>(47)99955-4798</span>
+                <a href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20">
+                  (47)99955-4798
+                </a>
               </div>
             </div>
           </div>
-          <form className="flex flex-col items-center w-1/2" onSubmit={handleSubmit}>
+          <form
+            className="flex flex-col items-center w-full md:w-1/2"
+            onSubmit={handleSubmit}
+          >
+            <label htmlFor="name" className="mb-2">
+              Nome:
+            </label>
             <input
               type="text"
               name="name"
@@ -153,6 +163,10 @@ const contato = (props: Props) => {
               placeholder="Digite seu nome"
             />
             {error.name && <p className="text-red-500">{error.name}</p>}
+
+            <label htmlFor="emal" className="mb-2">
+              E-mail:
+            </label>
             <input
               type="email"
               value={data.email}
@@ -163,6 +177,10 @@ const contato = (props: Props) => {
               placeholder="Digite seu e-mail"
             />
             {error.email && <p className="text-red-500">{error.email}</p>}
+
+            <label htmlFor="message" className="mb-2">
+              Mensagem:
+            </label>
             <textarea
               value={data.message}
               onChange={(e) => setData({ ...data, message: e.target.value })}

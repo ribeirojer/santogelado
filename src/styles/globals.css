@@ -5,7 +5,7 @@
 #header {
   display: flex;
   backdrop-filter: blur(5px);
-  background: linear-gradient(90deg, #000000, #00000044, #000000);
+  background: linear-gradient(90deg, #000000, #000022, #00000044, #000022, #000000);
   color: white; 
   width: 100%;
   z-index: 20;

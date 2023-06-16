@@ -9,7 +9,7 @@ const About = (props: Props) => {
   return (
     <>
       <Header></Header>
-      <main id="main" className="fade delay-1500">
+      <main className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="container text-justify pt-28 mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-center">Quem Somos</h2>
           <p className="mb-8">
@@ -26,10 +26,10 @@ const About = (props: Props) => {
             serviços de alta qualidade com um toque pessoal.
           </p>
         </div>
-        <section className="flex flex-col lg:flex-row gap-4  items-center justify-center  py-16 container mx-auto">
+        <section className="flex flex-col lg:flex-row gap-4 items-center justify-center  py-16 container mx-auto">
           <Image
             src="/assets/337517281_765356411781760_6443080553769560433_n.jpg"
-            className="img-fluid"
+            className="img-fluid rounded-lg"
             width={500}
             height={500}
             alt="foto do proprietário"
@@ -51,7 +51,7 @@ const About = (props: Props) => {
             Acreditamos que nossa equipe é a chave para o sucesso da Santo
             Gelado Drinks.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
             <ul>
               <li className="flex items-center">
                 <svg
@@ -115,14 +115,14 @@ const About = (props: Props) => {
         <section className="flex flex-col lg:flex-row gap-4  items-center justify-center  py-16 container mx-auto">
           <Image
             src="/assets/330998051_1597833774054542_6406062385927904103_n.jpg"
-            className="img-fluid"
+            className="img-fluid rounded-lg"
             width={500}
             height={500}
             alt="foto da equipe 1"
           />
           <Image
             src="/assets/347379795_234178869231485_5614191031193606236_n.jpg"
-            className="img-fluid"
+            className="img-fluid rounded-lg"
             width={500}
             height={500}
             alt="foto da equipe 2"
@@ -134,7 +134,7 @@ const About = (props: Props) => {
             href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-4 px-8 rounded-md"
+            className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-4 px-8 rounded-lg"
           >
             Entre em contato
           </a>

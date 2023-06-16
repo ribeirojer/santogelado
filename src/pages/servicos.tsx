@@ -11,7 +11,7 @@ const Services = (props: Props) => {
     <>
       <Header></Header>
       <main id="main" data-aos="fade" data-aos-delay="1500">
-        <div className="container text-justify pt-28 mx-auto">
+        <div className="container text-justify pt-28 px-4 mx-auto">
           <h1 className="text-4xl font-bold mb-4 text-center">
             Nossos Serviços
           </h1>
@@ -21,7 +21,7 @@ const Services = (props: Props) => {
             especial.
           </p>
         </div>
-        <section className="p-8">
+        <section className="px-4 py-8">
           <div className="container mx-auto">
             <div className="-mx-4 flex flex-wrap">
               {cards.map((card, index) => (
