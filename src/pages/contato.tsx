@@ -123,7 +123,7 @@ const contato = (props: Props) => {
               </svg>
               <div>
                 <h3 className="font-bold">E-mail:</h3>
-                <a href="mailto:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+                <a href="mailto:contato@santogeladodrinks.com">
                   contato@santogeladodrinks.com
                 </a>
               </div>
@@ -140,7 +140,12 @@ const contato = (props: Props) => {
               </svg>
               <div>
                 <h3 className="font-bold">Telefone:</h3>
-                <a href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5547999554798&amp;text=Olá,%20tudo%20bem?%20eu%20tenho%20interesse%20em%20um%20serviço%20da%20Santo%20Gelado"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="WhatsApp"
+                >
                   (47)99955-4798
                 </a>
               </div>
@@ -193,7 +198,7 @@ const contato = (props: Props) => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Enviar Mensagem
               </button>
