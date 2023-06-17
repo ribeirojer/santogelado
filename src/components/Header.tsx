@@ -81,7 +81,7 @@ const Header = (props: Props) => {
                 <Link
                   href="/sobre"
                   passHref
-                  className={router.pathname === "/sobre-nos" ? "border-b-2 border-yellow-500" : ""}
+                  className={router.pathname === "/sobre-nos" ? "border-b-2 border-[#d8c417]" : ""}
                 >
                   Sobre Nós
                 </Link>
@@ -90,7 +90,7 @@ const Header = (props: Props) => {
                 <Link
                   href="/servicos"
                   passHref
-                  className={router.pathname === "/servicos" ? "border-b-2 border-yellow-500" : ""}
+                  className={router.pathname === "/servicos" ? "border-b-2 border-[#d8c417]" : ""}
                 >
                   Serviços
                 </Link>
@@ -99,7 +99,7 @@ const Header = (props: Props) => {
                 <Link
                   href="/contato"
                   passHref
-                  className={router.pathname === "/contato" ? "border-b-2 border-yellow-500" : ""}
+                  className={router.pathname === "/contato" ? "border-b-2 border-[#d8c417]" : ""}
                 >
                   Contato
                 </Link>
