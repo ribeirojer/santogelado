@@ -37,15 +37,30 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   background-color: #000;
+
+  background: linear-gradient(-45deg, #050404, #161718, #987407);
+  background-size: 400% 400%;
+  animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+@keyframes backgroundTransition {
+  0% {
+    background-position: 0% 80%;
+  }
+  50% {
+    background-position: 80% 100%;
+  }
+  100% {
+    background-position: 0% 90%;
+  }
+}
 a {
   color: var(--color-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #32cf93;
+  color: #d8c417;
   text-decoration: none;
 }
 

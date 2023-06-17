@@ -5,8 +5,15 @@
 #header {
   display: flex;
   backdrop-filter: blur(5px);
-  background: linear-gradient(90deg, #000000, #000000bb, #00000044, #000000bb, #000000);
-  color: white; 
+  background: linear-gradient(
+    90deg,
+    #000000,
+    #000000bb,
+    #00000044,
+    #000000bb,
+    #000000
+  );
+  color: white;
   width: 100%;
   z-index: 20;
   align-items: center;
@@ -121,10 +128,10 @@
   top: 48px;
 }
 #toggle:checked + .checkbox {
-  background-color: #bbb;
+  background-color: #d8c417;
 }
 #toggle:checked ~ .menu {
-  box-shadow: 0px 0px 0px 100vmax #bbb;
+  box-shadow: 0px 0px 0px 100vmax #d8c417;
   z-index: 1;
 }
 #toggle:checked ~ .menu-itens {
@@ -134,14 +141,14 @@
 
 .menularge {
   display: none;
-  li a {
-    padding: 0.3rem;
-    color: #eee;
-    transition: 0.5s;
-    font-weight: 700;
-    &:hover {
-      color: #bbb;
-    }
+}
+.menularge li a {
+  padding: 0.3rem;
+  color: #eee;
+  transition: 0.5s;
+  font-weight: 700;
+  &:hover {
+    color: #bbb;
   }
 }
 
@@ -208,11 +215,28 @@
   position: relative;
 }
 
+#slider div,
 #slider img {
-  padding: 0 1rem;
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  transition: transform 500ms ease-in-out;
+}

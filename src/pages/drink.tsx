@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {};
 
-const GallerySingle = (props: Props) => {
+const Drink = (props: Props) => {
   return (
     <>
       <Header></Header>
@@ -145,4 +145,4 @@ const GallerySingle = (props: Props) => {
   );
 };
 
-export default GallerySingle;
+export default Drink;

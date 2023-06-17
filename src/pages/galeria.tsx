@@ -33,12 +33,12 @@ const Gallery = (props: Props) => {
         <section id="gallery" className="gallery">
           <div className="container mx-auto pb-16 px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {galleryItems.map((item) => (
+              {galleryItems.map((item, index) => (
                 <GalleryItem
                   key={item.imageUrl}
                   imageUrl={item.imageUrl}
                   imageAlt={item.imageAlt}
-                  galleryTitle={item.galleryTitle}
+                  currentIndex={index}
                 />
               ))}
             </div>
