@@ -210,10 +210,10 @@ const contato = (props: Props) => {
               placeholder="Digite seu e-mail"
             />
             {error.email && (
-              <p className="text-red-500 -mt-4 mb-4">{error.email}</p>
+              <p className="text-red-500 -mt-2 mb-4">{error.email}</p>
             )}
             {error.emailRegex && (
-              <p className="text-red-500 -mt-4 mb-4">{error.emailRegex}</p>
+              <p className="text-red-500 -mt-2 mb-4">{error.emailRegex}</p>
             )}
             <label htmlFor="message" className="mb-2">
               Mensagem:
@@ -228,7 +228,7 @@ const contato = (props: Props) => {
               placeholder="Digite sua mensagem"
             ></textarea>
             {error.message && (
-              <p className="text-red-500 -mt-4 mb-4">{error.message}</p>
+              <p className="text-red-500 -mt-2 mb-4">{error.message}</p>
             )}
             <div className="text-center">
               <button
@@ -242,7 +242,7 @@ const contato = (props: Props) => {
             {error.general && (
               <p className="text-red-500 -mt-4 mb-4">{error.general}</p>
             )}
-            {success && <p className="text-green-500">Mensagem enviada!</p>}
+            {success && <p className="text-green-500 mt-4">Mensagem enviada!</p>}
           </form>
         </section>
         <a
