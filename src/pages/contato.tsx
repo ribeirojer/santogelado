@@ -50,7 +50,7 @@ const contato = (props: Props) => {
       emailRef.current?.focus();
       return;
     }
-    if (!data.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+    if (!data.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       setError((prevState) => ({
         ...prevState,
         emailRegex: "Por favor digite um e-mail válido.",
@@ -70,9 +70,14 @@ const contato = (props: Props) => {
     setLoading(true);
 
     setTimeout(() => {
+      setData({
+        name: "",
+        email: "",
+        message: "",
+      });
       setSuccess(true);
       setLoading(false);
-    }, 2000);
+    }, 1000);
 
     // sendFormToServer()
     //   .then(() => {
@@ -196,7 +201,7 @@ const contato = (props: Props) => {
               E-mail:
             </label>
             <input
-              type="email"
+              type="text"
               value={data.email}
               ref={emailRef}
               onChange={(e) => setData({ ...data, email: e.target.value })}
