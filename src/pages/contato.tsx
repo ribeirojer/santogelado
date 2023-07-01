@@ -68,20 +68,24 @@ const contato = (props: Props) => {
     }
 
     setLoading(true);
-    sendFormToServer()
-      .then(() => {
-        setSuccess(true);
-        setLoading(false);
-      })
-      .catch((error) => {
-        // setError((prevState) => ({
-        //   ...prevState,
-        //   general:
-        //     "Ocorreu um erro ao enviar o formulário, tente novamente mais tarde.",
-        // }));
-        setSuccess(true);
-        setLoading(false);
-      });
+
+    setTimeout(() => {
+      setSuccess(true);
+      setLoading(false);
+    }, 2000);
+
+    // sendFormToServer()
+    //   .then(() => {
+    //   })
+    //   .catch((error) => {
+    //     // setError((prevState) => ({
+    //     //   ...prevState,
+    //     //   general:
+    //     //     "Ocorreu um erro ao enviar o formulário, tente novamente mais tarde.",
+    //     // }));
+    //     setSuccess(true);
+    //     setLoading(false);
+    //   });
   };
 
   return (
@@ -232,7 +236,7 @@ const contato = (props: Props) => {
             {error.general && (
               <p className="text-red-500 -mt-4 mb-4">{error.general}</p>
             )}
-            {success && <p className="text-green-500">Mensagem enviada</p>}
+            {success && <p className="text-green-500">Mensagem enviada!</p>}
           </form>
         </section>
         <a
