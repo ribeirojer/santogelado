@@ -50,7 +50,7 @@ const contato = (props: Props) => {
       emailRef.current?.focus();
       return;
     }
-    if (data.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+    if (!data.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       setError((prevState) => ({
         ...prevState,
         emailRegex: "Por favor digite um e-mail válido.",
@@ -233,7 +233,7 @@ const contato = (props: Props) => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Enviar Mensagem
               </button>
