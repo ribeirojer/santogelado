@@ -50,7 +50,7 @@ const contato = (props: Props) => {
       emailRef.current?.focus();
       return;
     }
-    if (!data.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+    if (data.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       setError((prevState) => ({
         ...prevState,
         emailRegex: "Por favor digite um e-mail válido.",
@@ -189,14 +189,13 @@ const contato = (props: Props) => {
               ref={nameRef}
               value={data.name}
               onChange={(e) => setData({ ...data, name: e.target.value })}
-              className="w-full form-control text-black mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full form-control text-black placeholder:text-gray-700 mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
               id="name"
               placeholder="Digite seu nome"
             />
             {error.name && (
               <p className="text-red-500 -mt-4 mb-4">{error.name}</p>
             )}
-
             <label htmlFor="emal" className="mb-2">
               E-mail:
             </label>
@@ -205,7 +204,7 @@ const contato = (props: Props) => {
               value={data.email}
               ref={emailRef}
               onChange={(e) => setData({ ...data, email: e.target.value })}
-              className="w-full form-control text-black mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full form-control text-black placeholder:text-gray-700 mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
               name="email"
               id="email"
               placeholder="Digite seu e-mail"
@@ -213,7 +212,9 @@ const contato = (props: Props) => {
             {error.email && (
               <p className="text-red-500 -mt-4 mb-4">{error.email}</p>
             )}
-
+            {error.emailRegex && (
+              <p className="text-red-500 -mt-4 mb-4">{error.emailRegex}</p>
+            )}
             <label htmlFor="message" className="mb-2">
               Mensagem:
             </label>
@@ -221,7 +222,7 @@ const contato = (props: Props) => {
               value={data.message}
               ref={messageRef}
               onChange={(e) => setData({ ...data, message: e.target.value })}
-              className="w-full form-control text-black mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full form-control text-black placeholder:text-gray-700 mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
               name="message"
               rows={5}
               placeholder="Digite sua mensagem"
@@ -232,7 +233,7 @@ const contato = (props: Props) => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Enviar Mensagem
               </button>
