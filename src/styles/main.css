@@ -38,9 +38,9 @@ body {
   color: var(--color-default);
   background-color: #000;
 
-  background: linear-gradient(-45deg, #050404, #161718, #987407);
-  background-size: 400% 400%;
-  animation: backgroundTransition 8s ease-in-out infinite;
+  /* background: linear-gradient(-45deg, #050404, #161718, #987407); */
+  /* background-size: 400% 400%; */
+  /* animation: backgroundTransition 8s ease-in-out infinite; */
 }
 
 @keyframes backgroundTransition {

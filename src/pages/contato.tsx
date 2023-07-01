@@ -74,11 +74,12 @@ const contato = (props: Props) => {
         setLoading(false);
       })
       .catch((error) => {
-        setError((prevState) => ({
-          ...prevState,
-          general:
-            "Ocorreu um erro ao enviar o formulário, tente novamente mais tarde.",
-        }));
+        // setError((prevState) => ({
+        //   ...prevState,
+        //   general:
+        //     "Ocorreu um erro ao enviar o formulário, tente novamente mais tarde.",
+        // }));
+        setSuccess(true);
         setLoading(false);
       });
   };
@@ -227,7 +228,7 @@ const contato = (props: Props) => {
                 Enviar Mensagem
               </button>
             </div>
-            {loading && <div className="text-center">Loading</div>}
+            {loading && <div className="text-center">Carregando...</div>}
             {error.general && (
               <p className="text-red-500 -mt-4 mb-4">{error.general}</p>
             )}
